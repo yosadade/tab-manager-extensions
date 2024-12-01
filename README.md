@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Task-Manager Chrome Extension
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi ini adalah Chrome extension berbasis React.js yang dibuat untuk membantu pengguna mengelola tab browser sekaligus memudahkan mengorganisasi tugas-tugas.
 
-## Available Scripts
+## Demo
+Anda dapat mencoba demo extension ini dengan mengunjungi tautan berikut:  
+[Demo Tab-Manager Chrome Extension](https://jam.dev/c/60e256c1-cd13-499a-9d11-7b86913fb3f3)  
+*(Ganti dengan tautan demo Anda)*
 
-In the project directory, you can run:
+## Cara Memulai Proyek Task-Manager Extension
 
-### `npm start`
+1. **Clone Repository**  
+   - Clone repository ini ke komputer Anda dengan perintah berikut:
+     ```bash
+     git clone https://github.com/yosadade/tab-manager-extensions.git
+     cd tab-manager-extensions
+     ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Instalasi Dependencies**  
+   - Pastikan Anda sudah menginstal Node.js di komputer Anda. Kemudian jalankan:
+     ```bash
+     npm install
+     ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Menjalankan Proyek Secara Lokal**  
+   - Untuk melihat hasil pengembangan secara langsung, gunakan perintah:
+     ```bash
+     npm start
+     ```
 
-### `npm test`
+4. **Build Proyek**  
+   - Setelah selesai mengembangkan, build proyek untuk digunakan sebagai extension:
+     ```bash
+     npm run build
+     ```
+   - Hasil build akan berada di folder `build`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Upload ke Chrome Browser (Lokal)**  
+   - Untuk mencoba extension secara lokal di browser Chrome:
+     1. Buka Chrome dan masuk ke **chrome://extensions/**.
+     2. Aktifkan **Developer Mode** (pojok kanan atas).
+     3. Klik **Load Unpacked**, lalu pilih folder `build`.
+     4. Extension Anda sekarang aktif dan siap digunakan di browser.
 
-### `npm run build`
+6. **Upload ke Chrome Web Store**  
+   - Untuk mengunggah extension ke Chrome Web Store:
+     1. **Buat Akun Developer**: Daftar di [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
+     2. **Kompres Build Folder**: Buat file `.zip` dari folder `build`.
+     3. **Unggah ke Chrome Web Store**:
+        - Masuk ke dashboard, klik **Add a New Item**, lalu unggah file `.zip`.
+        - Lengkapi informasi deskripsi dan screenshot.
+        - Kirimkan untuk ditinjau oleh Google.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
